@@ -1,0 +1,434 @@
+/*===================
+ Common style for this website
+ =====================================  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --primary-color: rgb(57, 179, 1);
+}
+
+/*================ 
+header section style 
+========================= */
+header {
+    height: 940px;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 228px;
+    padding: 30px 0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.manu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.manu li {
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* header text section  */
+.header-text {
+    text-align: center;
+
+}
+
+.header-title {
+    margin-top: 100px;
+}
+
+.header-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.header-description {
+    margin: 30px 0;
+}
+
+.hader-btn {
+    width: 140px;
+    height: 45px;
+    border-radius: 8px;
+    color: #ffff;
+    background-color: var(--primary-color);
+    border: 0px;
+    margin-bottom: 50px;
+}
+
+.hader-btn:hover {
+    background-color: rgb(255, 0, 76);
+    width: 142px;
+    height: 47px;
+    transition: 2s;
+}
+
+/* header banner style  */
+.header-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 1440px;
+    height: 410px;
+    padding: 0px 240px;
+}
+
+/* section one style  */
+.section-one {
+    margin-top: 90px;
+}
+
+.section-one {
+    display: flex;
+    padding: 0px 300px;
+    width: 100%;
+}
+
+.gallary-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallary-left img {
+    width: 160px;
+    height: 160px;
+}
+
+.section-one-text {
+    margin-left: 75px;
+    display: grid;
+    align-items: center;
+}
+
+.title-text {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.section-one-description {
+    margin: -36px 0px;
+}
+
+/* section two style  */
+.section-two {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 100px 200px;
+    gap: 30px;
+}
+
+.section-two-right img {
+    width: 100%;
+    position: relative;
+}
+
+.right-card {
+    background-color: var(--primary-color);
+    height: 100px;
+    width: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    line-height: 2px;
+    position: absolute;
+    margin: -79px -54px;
+    border-radius: 7px;
+}
+
+.section-two-left-header {
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.section-two-left-description {
+    margin-bottom: 20px;
+}
+
+.left-card {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 2px 1px 20px 0px #e5e5e5;
+    border-radius: 8px;
+}
+
+/* section three style  */
+.section-three {
+    margin: 0px 200px;
+}
+
+.section-three h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.section-three-cards {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.section-three-card:hover {
+    background-color: aqua;
+}
+
+
+/* ============================================
+   In this section use simple Animation use
+ ======================================================= */
+.section-three-card {
+    border: 1px solid var(--primary-color);
+    border-radius: 7px;
+    padding: 15px;
+    text-align: center;
+    width: 20%;
+    animation: card 15s;
+}
+
+@keyframes card {
+    0% {
+        background-color: blue;
+        color: #fff;
+    }
+
+    25% {
+        background-color: rgb(255, 255, 0);
+        color: black;
+    }
+
+    50% {
+        background-color: red;
+        color: #fff;
+    }
+
+    100% {
+        background-color: rgb(79, 243, 3);
+    }
+}
+
+/* section four style  */
+.section-four {
+    text-align: center;
+    margin: 180px 0px;
+}
+
+.section-four-description {
+    margin: 25px 0px;
+}
+
+.section-four-title {
+    font-size: 34px;
+}
+
+.section-four-cards {
+    margin: 50px 0px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+/* footer section style  */
+.footer-section {
+    background-color: rgb(122, 1, 179);
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 30px 30px 0px 0px;
+    color: #ffff;
+    padding: 30px;
+}
+
+.map {
+    margin-top: 20px;
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.footer-section h1 {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.footer-section p {
+    line-height: 28px;
+    text-align: left;
+
+}
+
+.copy-right {
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+    color: #ffff;
+    background-color: rgb(132, 73, 159);
+}
+
+/* resopnsive section  */
+/* for up to <576px device  */
+@media screen and (max-width:576px) {
+    header {
+        width: 576px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .manu {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 90%;
+        height: 271px;
+        padding: 0;
+    }
+
+    .gallary-left img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .section-one {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .gallary-left {
+        padding: 10px 87px;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-one-description {
+        margin: 19px 0px;
+    }
+
+    .section-one-text {
+        margin: 20px 0px;
+    }
+
+    .section-two {
+        grid-template-columns: 100%;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .right-card {
+        margin: -43px 190px;
+    }
+
+    .section-three {
+        margin: 100px 0px;
+    }
+
+    .section-three-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-three-card {
+        width: 350px;
+        height: 200px;
+    }
+
+    .section-four-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .footer-section {
+        height: 653px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .copy-right {
+        height: 80px;
+    }
+
+
+}
+
+/* for <360px width device  */
+@media screen and (max-width:360px) {
+    header {
+        width: 360px;
+    }
+
+    .right-card {
+        margin: -43px 92px;
+    }
+
+    .section-one-text {
+        margin: 20px 85px;
+    }
+
+    .gallary-left img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .image {
+        width: 90%;
+        height: 189px;
+        padding: 0;
+    }
+
+    .section-three-card {
+        width: 246px;
+        height: 200px;
+    }
+
+    .section-four-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-section p {
+        margin-bottom: 20px;
+    }
+
+    .footer-section p {
+        margin-bottom: 20px;
+    }
+
+    .copy-right {
+        height: 80px;
+    }
+
+}
